@@ -1,0 +1,9 @@
+{
+  "title": "",
+  "description": "",
+  "app_name": "{{ ''.join(cookiecutter['title'].split()).replace('_', '') }}",
+  "package_name": "{{ '-'.join(cookiecutter['title'].lower().split()).replace('_', '-') }}",
+  "package_folder": "{{ '_'.join(cookiecutter['title'].lower().split()).replace('-', '_') }}",
+  "github_username": "RKeelan",
+  "author_name": "R. Keelan"
+}
