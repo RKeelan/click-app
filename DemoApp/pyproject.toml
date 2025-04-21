@@ -1,0 +1,28 @@
+[project]
+name = "demo-app"
+version = "0.1"
+description = ""
+readme = "README.md"
+authors = [{name = "R. Keelan"}]
+license = "Apache-2.0"
+requires-python = ">=3.10"
+classifiers = []
+dependencies = [
+    "click"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/RKeelan/DemoApp"
+Changelog = "https://github.com/RKeelan/DemoApp/releases"
+Issues = "https://github.com/RKeelan/DemoApp/issues"
+CI = "https://github.com/RKeelan/DemoApp/actions"
+
+[project.scripts]
+DemoApp = "demo_app.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]

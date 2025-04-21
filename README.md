@@ -37,7 +37,5 @@ git branch -m master main
 
 gh auth login
 gh repo create $app --source . --description $description --public --push
-git remote add origin "https://github.com/$user/$app.git"
-git push -u origin main
 ```
 The template will have created a GitHub Action which runs your tool's test suite against every commit.
