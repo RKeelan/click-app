@@ -31,5 +31,5 @@ python -m pytest
 
 Run the app:
 ```powershell
-{{ cookiecutter.package_name  }} -v
+{{ cookiecutter.package_name  }} --version
 ```
