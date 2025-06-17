@@ -4,6 +4,7 @@
   "app_name": "{{ ''.join(cookiecutter['title'].split()).replace('_', '') }}",
   "package_name": "{{ '-'.join(cookiecutter['title'].lower().split()).replace('_', '-') }}",
   "package_folder": "{{ '_'.join(cookiecutter['title'].lower().split()).replace('-', '_') }}",
+  "publish_to_pypi": ["y", "n"],
   "github_username": "RKeelan",
   "author_name": "R. Keelan"
 }
