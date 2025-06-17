@@ -4,8 +4,8 @@ version = "0.1"
 description = "{{ cookiecutter.description or '' }}"
 readme = "README.md"
 authors = [{name = "{{ cookiecutter.author_name }}"}]
-license = "Apache-2.0"
-requires-python = ">=3.10"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
 classifiers = []
 dependencies = [
     "click"
@@ -25,4 +25,4 @@ CI = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_
 {{ cookiecutter.app_name }} = "{{ cookiecutter.package_folder }}.cli:cli"
 
 [project.optional-dependencies]
-test = ["pytest"]
+test = ["pytest", "pytest-cov"]
