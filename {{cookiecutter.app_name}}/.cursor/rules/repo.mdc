@@ -1,0 +1,13 @@
+---
+alwaysApply: true
+---
+
+# Overview
+
+{{ cookiecutter.description or '' }}
+
+# Architecture
+
+# CLI / API / UI
+
+# Tasks
