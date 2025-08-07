@@ -20,9 +20,31 @@ Create a new virtual environment:
 uv venv && .venv\Scripts\activate.ps1
 ```
 
-Install dependencies (including test):
+Install dependencies:
 ```powershell
-uv pip install -e '.[test]'
+uv sync
+```
+
+Run the app:
+```powershell
+{{ cookiecutter.app_name }} --version
+```
+
+## Development
+
+Install test and dev dependcies:
+```powershell
+uv sync --all-extras
+```
+
+Install pre-commit hooks:
+```powershell
+pre-commit install
+```
+
+Format code and fix linting issues:
+```powershell
+ruff format . && ruff check --fix .
 ```
 
 Run the tests:
@@ -30,7 +52,7 @@ Run the tests:
 python -m pytest
 ```
 
-Run the app:
+Run tests with coverage:
 ```powershell
-{{ cookiecutter.app_name }} --version
+python -m pytest --cov={{ cookiecutter.package_folder }}
 ```

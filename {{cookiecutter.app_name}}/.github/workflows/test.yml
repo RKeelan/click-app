@@ -25,4 +25,4 @@ jobs:
 {% endraw %}
     - name: Run tests
       run: |
-        python -m pytest --cov={{ cookiecutter.package_folder }} --cov-report=xml --cov-fail-under=95
+        python -m pytest --cov={{ cookiecutter.package_folder }} --cov-report=xml

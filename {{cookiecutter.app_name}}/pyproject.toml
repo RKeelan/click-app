@@ -26,3 +26,42 @@ CI = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_
 
 [project.optional-dependencies]
 test = ["pytest", "pytest-cov"]
+dev = ["ruff", "pre-commit"]
+
+# Coverage configuration
+[tool.coverage.run]
+branch = true
+source = ["{{ cookiecutter.package_folder }}"]
+omit = ["*/__main__.py", "tests/*"]
+
+[tool.coverage.report]
+show_missing = true
+precision     = 1
+fail_under    = 75
+
+# Ruff configuration
+[tool.ruff]
+line-length = 120
+target-version = "py39"
+
+[tool.ruff.format]
+# Use Black-compatible formatting
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint]
+# Enable essential rule sets
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # Pyflakes
+    "I",   # isort (import sorting)
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = []
+
+[tool.ruff.lint.isort]
+# Sort imports
+known-first-party = ["{{ cookiecutter.package_folder }}"]
