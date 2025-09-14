@@ -5,7 +5,7 @@ description = "{{ cookiecutter.description or '' }}"
 readme = "README.md"
 authors = [{name = "{{ cookiecutter.author_name }}"}]
 license = {file = "LICENSE"}
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 classifiers = []
 dependencies = [
     "click"
@@ -42,7 +42,7 @@ fail_under    = 75
 # Ruff configuration
 [tool.ruff]
 line-length = 120
-target-version = "py39"
+target-version = "py310"
 
 [tool.ruff.format]
 # Use Black-compatible formatting

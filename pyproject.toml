@@ -1,0 +1,28 @@
+[project]
+name = "click-app"
+version = "0.1"
+description = "Cookiecutter template for creating Click-based command-line applications"
+readme = "README.md"
+authors = [{name = "R. Keelan"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = []
+dependencies = [
+    "cookiecutter>=2.1.0"
+]
+[project.urls]
+Homepage = "https://github.com/RKeelan/click-app"
+Repository = "https://github.com/RKeelan/click-app"
+Issues = "https://github.com/RKeelan/click-app/issues"
+Changelog = "https://github.com/RKeelan/click-app/releases"
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+    'pip',
+]
+dev = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

@@ -54,7 +54,7 @@ def test_generated_project_installs():
         
         # Try to install the generated project
         result = subprocess.run(
-            ['pip', 'install', '-e', '.'],
+            ['python', '-m', 'pip', 'install', '-e', '.'],
             cwd=result_dir,
             capture_output=True,
             text=True
@@ -106,7 +106,7 @@ def test_cli_works():
         
         # Install the project
         subprocess.run(
-            ['pip', 'install', '-e', '.'],
+            ['python', '-m', 'pip', 'install', '-e', '.'],
             cwd=result_dir,
             check=True,
             capture_output=True
