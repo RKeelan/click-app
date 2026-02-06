@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "05:00"
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "05:00"
+  - package-ecosystem: "pip"
+    directory: "/{{cookiecutter.app_name}}"
+    schedule:
+      interval: "daily"
+      time: "05:00"
