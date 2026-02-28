@@ -1,6 +1,4 @@
----
-alwaysApply: true
----
+@include AGENTS.md
 
 # Overview
 
