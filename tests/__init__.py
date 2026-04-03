@@ -1,1 +1,1 @@
-# Tests for the click-app cookiecutter template 
+# Tests for the python-cli-app cookiecutter template

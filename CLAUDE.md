@@ -34,7 +34,7 @@ python -m pytest
 cookiecutter .
 
 # Install template from GitHub
-uvx cookiecutter gh:rkeelan/click-app
+uvx cookiecutter gh:rkeelan/python-cli-app
 ```
 
 ### Generated Project Commands (after using template)
