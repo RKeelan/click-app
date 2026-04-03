@@ -1,7 +1,7 @@
-# click-app cookiecutter template
+# python-cli-app cookiecutter template
 
-[![Tests](https://github.com/RKeelan/click-app/actions/workflows/test.yml/badge.svg)](https://github.com/RKeelan/click-app/actions/workflows/test.yml)
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/RKeelan/click-app/blob/master/LICENSE)
+[![Tests](https://github.com/RKeelan/python-cli-app/actions/workflows/test.yml/badge.svg)](https://github.com/RKeelan/python-cli-app/actions/workflows/test.yml)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/RKeelan/python-cli-app/blob/master/LICENSE)
 
 Cookiecutter template for creating new [Click](https://click.palletsprojects.com/) command-line tools.
 
@@ -10,11 +10,11 @@ Use this template on your own machine with cookiecutter, or create a brand new r
 
 ## Usage
 
-Run `uvx cookiecutter gh:rkeelan/click-app` and then answer the prompts. Here's an example run:
+Run `uvx cookiecutter gh:rkeelan/python-cli-app` and then answer the prompts. Here's an example run:
 ```
-$ cookiecutter gh:RKeelan/click-app
+$ cookiecutter gh:RKeelan/python-cli-app
   [1/8] title (): Demo App
-  [2/8] description (): Demonstration of https://github.com/rkeelan/click-app
+  [2/8] description (): Demonstration of https://github.com/rkeelan/python-cli-app
   [3/8] app_name (DemoApp): 
   [4/8] package_name (demo-app): 
   [5/8] package_folder (demo_app): 

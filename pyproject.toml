@@ -1,5 +1,5 @@
 [project]
-name = "click-app"
+name = "python-cli-app"
 version = "0.1"
 description = "Cookiecutter template for creating Click-based command-line applications"
 readme = "README.md"
@@ -11,10 +11,10 @@ dependencies = [
     "cookiecutter>=2.1.0"
 ]
 [project.urls]
-Homepage = "https://github.com/RKeelan/click-app"
-Repository = "https://github.com/RKeelan/click-app"
-Issues = "https://github.com/RKeelan/click-app/issues"
-Changelog = "https://github.com/RKeelan/click-app/releases"
+Homepage = "https://github.com/RKeelan/python-cli-app"
+Repository = "https://github.com/RKeelan/python-cli-app"
+Issues = "https://github.com/RKeelan/python-cli-app/issues"
+Changelog = "https://github.com/RKeelan/python-cli-app/releases"
 
 [project.optional-dependencies]
 test = [
