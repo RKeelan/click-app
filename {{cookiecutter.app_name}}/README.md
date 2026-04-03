@@ -47,6 +47,11 @@ Format code and fix linting issues:
 ruff format . && ruff check --fix .
 ```
 
+Type check:
+```powershell
+pyright
+```
+
 Run the tests:
 ```powershell
 python -m pytest

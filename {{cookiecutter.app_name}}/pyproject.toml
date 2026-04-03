@@ -26,7 +26,7 @@ CI = "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.app_
 
 [project.optional-dependencies]
 test = ["pytest", "pytest-cov"]
-dev = ["ruff", "pre-commit"]
+dev = ["ruff", "pre-commit", "pyright"]
 
 # Coverage configuration
 [tool.coverage.run]
@@ -59,9 +59,18 @@ select = [
     "B",   # flake8-bugbear
     "C4",  # flake8-comprehensions
     "UP",  # pyupgrade
+    "ANN", # flake8-annotations
+    "TCH", # flake8-type-checking
 ]
 ignore = []
 
 [tool.ruff.lint.isort]
 # Sort imports
 known-first-party = ["{{ cookiecutter.package_folder }}"]
+
+# Pyright configuration
+[tool.pyright]
+typeCheckingMode = "strict"
+pythonVersion = "3.10"
+venvPath = "."
+venv = ".venv"
